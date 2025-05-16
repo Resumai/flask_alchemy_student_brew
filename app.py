@@ -22,7 +22,7 @@ class Student(db.Model):
     grade: str = Column(String(10), nullable=False)
 
     def __repr__(self) -> str:
-        return f"<Student name={self.name} age={self.age} grade={self.grade}>"
+        return f"<Student id={self.id} name={self.name} age={self.age} grade={self.grade}>"
 
 # Create the database and tables
 with app.app_context():
